@@ -25,23 +25,48 @@
     }
 
     .swiper {
-      width:100%;
-      height: 20rem;
-      background-color: aliceblue;
+      z-index: 10;
+   padding: 10px;
+      width: 90%;
+     height:17rem;
     }
+.swiperupper h1{
 
+  padding: 10px;
+}
     .swiper-slide {
-     width: 3rem;
-     height: 20px;
-     background-color: aqua;
-    }
+    
+      text-align: center;
+      font-size: 18px;
+      background: #444;
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px;
+        transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
 
-    @media (max-width: 760px) {
+    }
+    .swiper-slide:hover {
+  transform: scale(1.05);
+  background-color: #333;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+
+    @media (max-width: 768px) {
       .swiper-button-next {
         right: 20px;
         transform: rotate(90deg);
       }
+      .swiper {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+    
 
+      }
       .swiper-button-prev {
         left: 20px;
         transform: rotate(90deg);
@@ -61,9 +86,9 @@
             alt="" width="180" height="85">
         </div>
         <div class="butt">
-          <button>Home</button>
+          <button><a href="./index.html">Home</a></button>
           <button>English</button>
-          <button id="sing">Sing in</button>
+          <button id="sing"><a href="net3.html">Sing in</a></button>
         </div>
       </div>
     </div>
@@ -87,23 +112,25 @@
 
   <div class="Nocont"></div>
   <div class="swiperupper">
- <div class="swiper">
+  <!-- Swiper -->
+   <h1>Trending Now</h1>
+  <div class="swiper" >
     <div class="swiper-wrapper">
-      <div class="swiper-slide1"></div>
-      <div class="swiper-slide2"></div>
-      <div class="swiper-slide3"></div>
-      <div class="swiper-slide4"></div>
-      <div class="swiper-slide5"></div>
-      <div class="swiper-slide6"></div>
-      <div class="swiper-slide7"></div>
-      <div class="swiper-slide8"></div>
-      <div class="swiper-slide9"></div>
-      
+      <div class="swiper-slide" id="swip1"></div>
+      <div class="swiper-slide" id="swip2"></div>
+      <div class="swiper-slide" id="swip3"></div>
+      <div class="swiper-slide" id="swip4"></div>
+      <div class="swiper-slide"  id="swip5"></div>
+      <div class="swiper-slide" id="swip6"></div>
+      <div class="swiper-slide" id="swip7"></div>
+      <div class="swiper-slide" id="swip8"></div>
+      <div class="swiper-slide" id="swip9"></div>
     </div>
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next" style="color: #fff"></div>
+    <div class="swiper-button-prev" style="color: #fff"></div>
   </div>
- 
+
+
     <div class="for">
       <h1>More reasons to join</h1>
       <div class="for2">

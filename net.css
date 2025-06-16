@@ -3,10 +3,17 @@
     margin: 0;
 
 }
-
+  body {
+      background: #000;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
 
 .main{
-    height: 100vh;
+    height: 100%;
     width: 100%;
     display: flex;
     background: rgba(0, 0, 0, 0.5);
@@ -19,110 +26,72 @@
 
     
 }
-.upper{
- /* position: absolute; */
- height: 20%;
-
- width: 100%;
- display: grid;
-  background: rgba(0, 0, 0, 0.5);
- grid-template-columns: 1fr,2fr;
- 
-  
-}
-@media (max-width: 768px) {
-  .upper {
-    /* flex-direction: column; */
-    height: auto;
-    gap: 1rem;
-    padding: 1rem;
-    text-align: center;
-  }
-
-  /* .nav {
-    flex-direction: column;
-    gap: 0.5rem;
-  } */
-}
-
-/* Container */
-.mall {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-  margin: 0px 120px 0px 120px;
-   padding: 0px 10px;
-  
-    max-width: 1200px;
-  
-
-}
 
 
+.upper {
+       background: rgba(0, 0, 0, 0.5);
+      padding: 10px 20px;
+    }
 
-/* Button section (assumed right) */
-
-
- 
-
-
-/* Logo */
-.netflix {
-    width: 9.25rem;
-    height: 2.5rem;
-    color: rgb(229, 9, 20);
-    fill: currentColor;
-    display: block;
-}
-
-/* Button container */
-.butt {
-    display: flex;
-   top: 0%;
-  margin: 10px;
-  padding: 10px;
-    gap: 10px;
-    justify-content: flex-end;
-    flex-wrap: wrap; /* Ensures wrapping on small screens */
-}
-
-/* Buttons */
-.butt button {
-    height: 2rem;
-    padding: 0 1rem;
-    font-size: 1rem;
- color: aliceblue;
-    min-width: 80px;
-    background-color: transparent;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    cursor: pointer;
-}
-#sing{
-    background-color: red;
-    color: aliceblue;
-}
-
-/* Media Queries for responsiveness */
-@media (max-width: 600px) {
     .mall {
-        padding: 0 5vw;
-        grid-template-rows: auto auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .netflix img {
+      max-width: 100%;
+      height: auto;
     }
 
     .butt {
-        justify-content: center;
+      display: flex;
+      gap: 10px;
     }
 
     .butt button {
-        width: 100%;
-        max-width: 200px;
+      background-color: #e50914;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
     }
-}
+
+    .butt button:hover {
+      background-color: #b20710;
+    }
+
+    .butt a {
+      color: white;
+      text-decoration: none;
+    }
+
+    @media (max-width: 600px) {
+      .mall {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    
+      .butt {
+        margin-top: 10px;
+        flex-direction: column;
+        width: 100%;
+      }
+
+      .butt button {
+        width: 100%;
+      }
+    }
+
 
 
 .cont {
     
-  height: 100vh;
+  height: 100%;
   background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/6863f6e8-d419-414d-b5b9-7ef657e67ce4/web/IN-en-20250602-TRIFECTA-perspective_27a3fdfa-126f-4148-b153-55d60b51be6a_small");
   background-size: cover;
   background-position: center;
@@ -139,6 +108,8 @@
 }
 
 .impl {
+  margin: 10px;
+  padding: 10px;
   text-align: center;
   color: white;
   max-width: 800px;
@@ -163,8 +134,8 @@
 
 .butt2 {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+
+ 
   gap: 10px;
 }
 
@@ -200,10 +171,13 @@
   .butt2 {
     flex-direction: row;
     justify-content: center;
+     margin: 10px;
+     padding: 10px;
   }
 
   .butt2 input {
     flex: 2;
+   
   }
 
   .butt2 button {
@@ -211,78 +185,50 @@
     max-width: none;
   }
 }
+.butt a{
+text-decoration: none;
+color: #ccc;
+}
 .Nocont{
     width: 100%;
     height:20%;
     background: #050505;
 background: linear-gradient(0deg, rgba(5, 5, 5, 1) 32%, rgba(8, 12, 120, 1) 93%, rgba(240, 12, 12, 1) 100%);
 }
-/* .swiper-slide1{
-    background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  cursor: pointer;
-  height: 300px;
-  width: 10%;
+#swip1{
+  background-image: url(https://occ-0-2039-3647.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABf4wStrKekb1hEKRFD141eOa8rGZTWJK1QxVF2zxvJDivIDqQMNDUmh_d33HVtAxToXkZlAeLEzdhxPXCskBuNsi4X_wSv2Brzk.webp?r=7de);
+}
 
+#swip2{
     background-image: url(https://occ-0-2039-3647.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABYGL4_ns5MGTE5-Yd3ZQVB5apyY9yxQ39lxjT_27ehdoGzrxRwNc4osgXEeifcv9yO_MgMySL-p6hMxtQZnIEkZmyglIJ7wm7ik.webp?r=c23);
+
 }
-.swiper-slide2{
-    background-image: url(https://occ-0-2039-3647.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABYUCgDPIk4LvnEw_j-dC5ca65oxm4yP2Z7RFKlRcN6WYzCwNA4MhTNqTRrSAK9zND3cSjrYEpbQculmTCXPD09ZbvdCosdbuOjc.webp?r=062);
-background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  cursor: pointer;
-  height: 300px;
-  width: 10%;
-}
-.swiper-slide3{
+#swip3{
     background-image: url(https://occ-0-2039-3647.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABQqOh2yhpKE8385dV9hjlxxXtG63RjSjrlNOkx2yLuGMYe8JFTnA9ScVsioAhTa9Ds34ERhB2R4aBFUng1j54IFwl5JvjgVmGEU.webp?r=d66);
-background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  cursor: pointer;
-  height: 300px;
-  width: 10%;
+
   }
-.swiper-slide4{
+#swip4{
     background-image: url(https://occ-0-2039-3647.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABWtQdcUd4n6VKz6HTm_IbI2cOq0VDU7fDQpomIXBLuCYqtJ4j8hj2pz7j6spnX2osjRgTMJQ9xkMieYZWqC6xC8G4tGlTLJBm3I.webp?r=cc2);
-background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  cursor: pointer;
-  height: 300px;
-  width: 10%;
+
 }
-.swiper-slide5{
+#swip5{
     background-image: url(https://occ-0-2039-3647.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABYVcRfFB91jy3f8-_Alb6H4RUzqXFRA7ejjOfCOXF20XLRVeCyT3ZFEimKbZAimt2ayVUWXSnp6ApNxpoK0mA3XzJD__irrDkdMD6lDrOFPSvQqP8s0xn2dNBaU9JxIu4lUd.webp?r=63b);
-background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  cursor: pointer;
-  height: 300px;
-  width: 10%;
+
 }
-.swiper-slide6{
+#swip6{
     background-image: url(https://occ-0-2039-3647.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABZFBdXweIqorvQIPkQbuKg9rFcZJJ8yCUzSX1ySYOsmrcMeUgLlY3YWvFcXee7lFjHwMT_Ofd03ttH-rTzAHPZskA6K-f4imBAY.webp?r=81d);
-background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  cursor: pointer;
-  height: 300px;
-  width: 10%;
+
 }
-.swiper-slide7 {
+#swip7 {
   background-image: url(https://occ-0-2039-3647.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABUbEuw4gn448vhUbeTgwsmEsA4ZhBFHAbPyFyAk414jH72BDs0ALdA2TEDez1mRZHuyUjlpB_EL0LxkrymlRyHs2joUg2Izzl4Q.webp?r=ad2);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  cursor: pointer;
-  height: 300px;
-  width: 10%;
+  } 
+#swip8{
+  background-image: url(https://occ-0-2039-3647.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABcBQAzZgCcAJyLKGf0x3EjJHKr1h1oCRUQDfVspaHXampP-RjiOkIRlWBz7ViFOvUI1EdPSRcxoOPmB7paPLi52W4OmQZJ4NDMQ.webp?r=a92);
+}
+#swip9{
+  background-image: url(https://occ-0-2039-3647.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABf4wStrKekb1hEKRFD141eOa8rGZTWJK1QxVF2zxvJDivIDqQMNDUmh_d33HVtAxToXkZlAeLEzdhxPXCskBuNsi4X_wSv2Brzk.webp?r=7de);
+}
 
-
-} */
 
 .swiperupper{
   margin: 0px 10% 0px 10%;
@@ -407,6 +353,7 @@ justify-content: space-between;
   max-width: 1000px;
   background-color: transparent;
   font-size: 16px;
+ 
 border-color: green;
   border-radius: 2px;
 }
@@ -424,7 +371,7 @@ border-color: green;
   transition: background-color 0.3s ease;
 }
 .impl2 h3{
-  margin: 70px 20px 10px 20px;
+  margin: 70px 0px 10px 0px;
 }
 .qustion{
   display: grid;
@@ -461,7 +408,7 @@ margin: 10px;
 .qustion p{
  margin: 10px;gap: 10px;
 }
-@media (max-width: 600px) {
+@media (max-width:765px) {
   .impl2 {
     display: flex;
    
@@ -475,14 +422,17 @@ margin: 10px;
 
   .butt3 input {
     display:flex; /* Block is better for form controls */
-    width: 20rem;    
+ max-width: 16rem;
    
   }
 
   .butt3 button {
-    width: 40%;
+   max-width: 9rem;
       
    
+  }
+  .impl2 h3{
+    font-size :19px;;
   }
 }
 
